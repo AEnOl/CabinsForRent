@@ -88,7 +88,7 @@ function smallImgClickListener() {
         var index = $(".polaroid").children("img").index($(this)) + 1;
 
         // Finding image, named after index.
-        var imagePath = 'graphics/northern-lights-' + index + '.jpg';
+        var imagePath = '../graphics/northern-lights-' + index + '.jpg';
 
         $("#background-fade").css("display", "block");
         $("#large-img").css("display", "block");
