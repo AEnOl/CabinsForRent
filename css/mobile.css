@@ -1,0 +1,228 @@
+p, figcaption {
+	font-size: 0.9em;
+}
+
+a {
+	color: #64DD17;
+	text-decoration: none;
+}
+
+
+header {
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* GENERAL FOR TOP AND LOWER BANNER */
+
+header li a {
+	display: inline-block;
+}
+
+header #top-banner ul li{
+	font-size: 0.7em;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+header #top-banner #fb {
+	display: none;
+}
+
+/* BOTTOM BANNER */
+header nav,
+header nav ul li {
+	height: 30px;
+	text-align: left;
+}
+
+header nav ul li:not(:first-child):not(#current) {
+  	display: none;
+}
+
+header nav #current {
+	left: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	text-align: center;
+	right: 10%;
+	top: 19px;
+  }
+
+ header nav .menu #icon {
+    display: inline;
+    float: left;
+ }
+
+header nav .menu.compact li:not(#current) {
+  	background-color: #CFD8DC;
+  	border-top: 1px solid rgba(90, 109, 118, 0.5);
+  	display: block;
+  	float: none;
+  	text-align: left;
+  }
+
+header nav ul li a {
+	font-size: 0.9em;
+	padding-top: 6px;
+}
+
+header nav ul #icon a,
+header nav ul #current a {
+	border: none;
+}
+
+/* PARALLAX IMAGE */
+#hero {
+	height: 50%;
+	padding-top: 60px;
+}
+
+#hero h1 {
+	font-size: 1.9em;
+}
+
+#hero a {
+	font-size: 1.1em;
+	margin-top: 40px;
+	padding: 5px 10px 5px 10px;
+}
+
+/* SEPARATOR LINE IN DIVS */
+.separator {
+	display: block;
+  	border: none;
+    border-top: 2px dashed #64DD17;
+    margin: 10px auto;
+    width: 100px;
+}
+
+/* GENERAL FOR CONTENT DIVS */
+section {
+	padding: 0px 5px 0px 5px;
+}
+
+section article {
+	margin-top: 30px;
+}
+
+section article#northern-lights {
+	margin-bottom: 40px;
+}
+
+#cabins, #gallery, #contact {
+	padding: 60px 5px 35px 5px;
+}
+
+section h1 {
+	font-size: 1.3em;
+}
+
+
+/* CABINS FOR RENT SITE */
+
+#cabins #cabins-top p {
+	line-height: 20px;
+	text-align: center;
+}
+
+#cabins #cabins-top p i {
+	margin-right: 4px;
+}
+
+#cabins article {
+	margin: auto;
+	padding-right: 5px;
+	width: 95%;
+}
+
+#cabins article img {
+	height: 150px;
+}
+
+#cabins article h2 {
+	padding-bottom: 2px;
+}
+
+#cabins article a {
+	padding: 2px 5px 2px 5px;
+	top: 0px;
+}
+
+/* GALLERY SITE */
+.polaroid {
+	box-shadow: 5px 5px 5px rgba(96, 125, 139, 0.6);
+	display: block;
+	margin: 0px 10px 5px 10px;
+	padding: 5px;
+}
+
+.polaroid img {
+	height: 133px;
+	width: 100%;
+}
+
+.polaroid figcaption {
+	padding-top: 2px;
+}
+
+
+/* CONTACT FORM */
+#contact {
+	margin: auto;
+	width: 90%;
+}
+
+#contact-right {
+	display: none;
+}
+
+#contact h2 {
+	padding: 10px;
+}
+
+#contact-form table td { 
+	font-size: 1em;
+}
+
+#contact-form input,
+#contact-form textarea {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#contact-form #submit {
+	padding: 5px;
+	width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+	display: none;
+}
+
+#small-footer {
+	display: block;
+}
+
+#small-footer p {
+	font-size: 0.6em;
+	padding-top: 8px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

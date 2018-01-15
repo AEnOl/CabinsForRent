@@ -1,0 +1,390 @@
+﻿/* == 48 HOUR EXAM, NOVEMBER 2016  == */
+
+/* == GENERAL == */
+
+html, body {
+    background: #ECEFF1;
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    position: relative;
+}
+p, figcaption {
+    font-size: 1.1em;
+}
+a, a:hover, #hero a:hover, footer #right ul li a:hover, #cabins article a:hover {
+    color: #4CAF50;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+/* == HEADER SECTION == */
+
+header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header ul li {
+    display: inline-block;
+}
+
+/* -- TOP HEADER -- */
+
+header #top-banner, header #top-banner ul li, header #top-banner ul li a {
+    background-color: #263238;
+    color: white;
+}
+header #top-banner {
+    padding-left: 10px;
+}
+header #top-banner ul li {
+    font-size: 1.1em;
+    margin-right: 20px;
+}
+header #top-banner ul li a {
+    display: inline-block;
+    font-size: 1.3em;
+}
+header #top-banner #fb span {
+    display: none;
+}
+header #top-banner li a {
+    transition: background 1s ease-in-out;
+}
+header #top-banner li a:hover {
+    background-color: #37589B;
+}
+
+/* -- BOTTOM HEADER, NAVIGATION  */
+
+header nav, header nav ul li {
+    background-color: #CFD8DC;
+    height: 50px;
+    text-align: center;
+}
+header nav ul {
+    display: inline;
+}
+header nav ul li:not(:last-child) {
+    margin: 0;
+}
+header nav ul li a {
+    color: #25100A;
+    display: inline-block;
+    font-size: 1.7em;
+    height: 40px;
+    padding: 10px 15px 0px 15px;
+    transition: background-color 1s ease-in-out, color 0.5s ease-in-out;
+}
+header nav ul li a:hover {
+    background: #ECEFF1;
+    color: #4CAF50;
+}
+header nav #icon {
+    display: none;
+}
+header nav #icon a {
+    padding: 5px 15px 5px 15px;
+}
+
+/* == PARALLAX IMAGE == */
+
+#hero {
+    background-attachment: fixed;
+    background-image: url(../graphics/jumbotron.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 90%;
+    padding-top: 200px;
+    text-align: center;
+    width: 100%;
+    /* Increased on page load with jQuery */
+    opacity: 0;
+}
+#hero h1 {
+    color: #FFFAF7;
+    font-size: 3em;
+}
+#hero a {
+    background: rgba(207, 216, 220, 0.5);
+    border-radius: 10px;
+    color: #25100A;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-top: 75px;
+    padding: 10px 15px 10px 15px;
+    transition: background 1s ease-in-out, color 0.5s ease-in-out;
+}
+#hero a:hover {
+    background: rgba(207, 216, 220, 1);
+}
+
+/* == SEPARATOR LINE == */
+
+.separator {
+    border: none;
+    border-top: 2px dashed #64DD17;
+    margin: 25px auto;
+    width: 200px;
+}
+
+/* == FONT AWESOME ICONS == */
+
+.fa-heart {
+    color: #F44336;
+}
+.fa-trophy, .fa-star {
+    color: #FFCA28;
+}
+.fa-balance-scale {
+    color: #64DD17;
+}
+
+/* == GENERAL FOR SECTIONS == */
+
+section {
+    padding: 80px 125px 40px 125px;
+    text-align: center;
+}
+section article {
+    margin-top: 50px;
+}
+section h1 {
+    font-size: 1.9em;
+}
+section a {
+    font-weight: 600;
+}
+
+/* == GENERAL FOR CABINS, GALLERY AND CONTACT == */
+
+#cabins h1, #gallery h1, #contact h1 {
+    padding-top: 40px;
+}
+#cabins #cabins-top p i, #contact p i {
+    margin-right: 8px;
+}
+
+/* == FOOTER == */
+
+footer {
+    background-color: #263238;
+    height: 300px;
+    line-height: 25px;
+    margin-top: 80px;
+}
+footer div {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    vertical-align: top;
+    width: 32%;
+}
+footer h2 {
+    color: #B0BEC5;
+    font-size: 1.2em;
+    padding: 10px;
+}
+footer p, footer ul li a {
+    color: #90A4AE;
+    font-size: 0.8em;
+}
+footer #mid {
+    border-left: 2px dashed rgba(144, 164, 174, 0.75);
+    border-right: 2px dashed rgba(144, 164, 174, 0.75);
+}
+footer #right ul li {
+    border-bottom: 2px solid #78909C;
+    border-top: 2px solid #78909C;
+    margin: 5px;
+}
+footer #right ul li a {
+    color: #90A4AE;
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    transition: color 1s ease-in-out;
+    width: 100%;
+}
+footer #right ul li i {
+    float: left;
+    padding-top: 5px;
+}
+#small-footer {
+    display: none;
+    background-color: #263238;
+    bottom: 0;
+    color: white;
+    height: 30px;
+    opacity: 0.5;
+    position: fixed;
+    width: 100%;
+}
+.strong {
+    font-weight: 800;
+}
+
+/* == RESPONSIVE 1020 PX == */
+
+@media screen and (max-width:1020px) {
+    /* == HEADER SECTION == */
+    /* -- HEADER BOTTOM, NAVIGATION -- */
+    header nav ul li:not(:first-child):not(#current) {
+        display: none;
+    }
+    header nav #current {
+        left: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        right: 10%;
+        top: 0;
+        background: none;
+        margin-top: 25px;
+    }
+    header nav .menu #icon {
+        display: inline;
+        float: left;
+    }
+    header nav .menu.compact li:not(#current) {
+        background-color: #CFD8DC;
+        border-top: 1px solid rgba(90, 109, 118, 0.5);
+        display: block;
+        float: none;
+        margin: 0;
+        text-align: left;
+    }
+    header nav ul#icon a {
+        border: none;
+        padding: 0px;
+    }
+}
+
+/* == RESPONSIVE SECTION, 800 PX == */
+
+@media screen and (max-width:800px) {
+    /* == GENERAL  == */
+    p, figcaption {
+        font-size: 0.9em;
+    }
+    a {
+        color: #64DD17;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: #CFD8DC;
+    }
+    /* == HEADER SECTION == */
+    header {
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    header li a {
+        display: inline-block;
+    }
+    header #top-banner ul li {
+        font-size: 0.7em;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    header #top-banner #fb {
+        display: none;
+    }
+    /* == BOTTOM HEADER NAVIGATION == */
+    header nav, header nav ul li {
+        height: 30px;
+        text-align: left;
+    }
+    header nav ul li:not(:first-child):not(#current) {
+        display: none;
+    }
+    header nav ul li a {
+        padding-top: 6px;
+        height: 22px;
+        font-size: 0.9em;
+    }
+    header nav ul li a:hover {
+    	background-color: rgba(0,0,0,0);
+    }
+    header nav #current {
+        left: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        text-align: center;
+        right: 10%;
+        top: -6px;
+    }
+    header nav .menu #icon {
+        display: inline;
+        float: left;
+    }
+    header nav .menu.compact li:not(#current) {
+        background-color: #CFD8DC;
+        border-top: 1px solid rgba(90, 109, 118, 0.5);
+        display: block;
+        float: none;
+        text-align: left;
+    }
+    header nav ul #icon a, header nav ul #current a {
+        border: none;
+    }
+    /* == PARALLAX IMAGE == */
+    #hero {
+        height: 50%;
+        padding-top: 60px;
+    }
+    #hero h1 {
+        font-size: 1.9em;
+    }
+    #hero a {
+        font-size: 1.1em;
+        margin-top: 40px;
+        padding: 5px 10px 5px 10px;
+    }
+    /* == SEPARATOR LINE IN DIVS == */
+    .separator {
+        display: block;
+        margin: 10px auto;
+        width: 100px;
+    }
+    /* == GENERAL FOR SECTIONS == */
+    section {
+        padding: 0px 5px 0px 5px;
+    }
+    section article {
+        margin-top: 30px;
+    }
+    section article#northern-lights {
+        margin-bottom: 40px;
+    }
+    #cabins, #gallery, #contact {
+        padding: 60px 5px 35px 5px;
+    }
+    section h1 {
+        font-size: 1.3em;
+    }
+    /* == FOOTER == */
+    footer {
+        display: none;
+    }
+    #small-footer {
+        display: block;
+    }
+    #small-footer p {
+        font-size: 0.6em;
+        padding-top: 8px;
+        text-align: center;
+    }
+}

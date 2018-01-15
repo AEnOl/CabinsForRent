@@ -1,0 +1,72 @@
+/* == CONTACT FORM == */
+
+#contact {
+    overflow: auto;
+}
+#contact-left, #contact-right {
+    width: 48%;
+}
+#contact h2 {
+    padding: 20px;
+}
+#contact-left, #contact-form table label {
+    float: left;
+}
+#contact-right {
+    float: right;
+    line-height: 30px;
+}
+#contact-form table {
+    border-collapse: collapse;
+    width: 100%;
+}
+#contact-form table td {
+    border: 0;
+    font-size: 1.1em;
+    padding: 5px 0px 5px 0px;
+}
+#contact-form input, #contact-form textarea {
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+#contact-form #submit {
+    background-color: rgba(101, 221, 23, 0.3);
+    color: #25100A;
+    float: right;
+    font-size: 1em;
+    padding: 10px;
+    transition: background-color 0.5s ease-in-out;
+    width: 30%;
+}
+#contact-form #submit:hover {
+    background-color: rgba(101, 221, 23, .9);
+}
+
+@media screen and (max-width: 800px) {
+    #contact {
+        margin: auto;
+    }
+    #contact-right {
+        display: none;
+    }
+    #contact h2 {
+        display: none;
+    }
+    #contact-form {
+        padding-top: 10px;
+        width: 200%;
+    }
+    #contact-form table td {
+        font-size: 1em;
+    }
+    #contact-form input, #contact-form textarea {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    #contact-form #submit {
+        padding: 5px;
+        width: 100%;
+    }
+}
